@@ -1,0 +1,22 @@
+.site-nav{
+&__icon-mail{
+    @include box(16px, 12px);
+    display: flex;
+    margin-right: 10px;
+    fill: currentColor;
+   }
+&__icon-smartphone{
+    @include box(10px, 16px);
+    margin-right: 10px;
+   fill: currentColor;
+} 
+
+
+
+
+
+
+ 
+ 
+ 
+}
