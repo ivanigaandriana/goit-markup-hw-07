@@ -1,22 +1,33 @@
 .clients__title{
+    @include font(28px, 700, 33px);
+    margin-bottom: 30px;
     font-family: 'Roboto';
-    @include font(36px, 700, 42px);
-text-align: center;
+    text-align: center;
 letter-spacing: 0.03em;
-margin-bottom: 50px;
 color:var(--title-text-color);
+    @include destop{
+        @include font(36px, 700, 42px);
+        margin-bottom: 50px;
+    }  
+
 
 }
 .position{
     display: flex;
-   justify-content:space-around;
-    margin-right: 30px;
-    margin-bottom: 94px;
+    flex-wrap: wrap;
+   justify-content:center;
+    gap: 30px;
+    margin-bottom: 60px;
+    @include destop{
+        margin-bottom: 94px;
+
+    }
+   
     
 
-&:not(last-child){
-    margin-right: 0px;
-}
+// &:not(last-child){
+//     margin-right: 0px;
+// }
 
 
 &__client{
@@ -40,6 +51,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 &:hover,
 &:focus{
+    @include destop{
     fill: var(--accent-color);
     border-color:var(--accent-color) ;
-}}
+}}}

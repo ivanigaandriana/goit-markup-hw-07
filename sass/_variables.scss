@@ -18,17 +18,33 @@
     font-family:"Roboto",sans-serif;
 }
 .container{
-width: 1200px;
-margin: 0 auto;
-align-items: center;
-    }
+
+    max-width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px auto;
+  @include tablet {
+      max-width: 768px;
+  }
+  @include destop{
+  
+      max-width: 1200px;
+    
+    }}
 .page-container{
-width: 1200px;
-margin: 0 auto;
-align-items: center;
+    max-width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+  @include tablet {
+      max-width: 768px;
+  }
+  @include destop{
+  margin: 0 auto;
+      max-width: 1200px;
 }
 
-
+}
 a{
     text-decoration: none;
 }
@@ -53,5 +69,7 @@ img{
     display: block;
 }
 section{
-    padding-top: 95px;
+    padding-top: 60px;
+    @include destop{
+    padding-top: 95px;}
 }
